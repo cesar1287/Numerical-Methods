@@ -5,7 +5,7 @@
 #define FUNCAO_EXIBIR "cos(x)"
 
 // calculo da funcao fx sobre um dado x
-float f(float x){
+double f(double x){
     return(FUNCAO); //inserir a funcao desejada para o calculo
 }
 
@@ -98,7 +98,7 @@ int opcao = 1,pontos;
         if(opcao==1){
             printf("\nInsira o numero de pontos para a resolucao:\n");
             scanf("%d",&pontos);
-            printf("\nO resultado da funcao para %d ponto(s) eh: %.10f\n\n",pontos,gaussHermite(pontos));
+            printf("\nO resultado da funcao para %d ponto(s) eh: %.10lf\n\n",pontos,gaussHermite(pontos));
         }
 		if(opcao==0)
 			break;
